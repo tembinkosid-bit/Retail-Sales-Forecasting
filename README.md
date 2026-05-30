@@ -9,6 +9,34 @@ This project is an end-to-end **data engineering ETL pipeline** that ingests ret
 The pipeline is designed to simulate real-world production workflows used in retail analytics and data engineering systems.
 
 ---
+flowchart TD
+
+A[Kaggle Dataset API] --> B[Extraction Layer]
+B --> C[Raw Data Storage]
+
+C --> D[Validation Layer]
+D --> D1[Schema Validation]
+D --> D2[Data Quality Profiling]
+D --> D3[Null & Duplicate Checks]
+
+D --> E[Transformation Layer]
+E --> E1[Data Cleaning]
+E --> E2[Feature Engineering]
+E --> E3[Type Standardization]
+
+E --> F[Processed Data Layer]
+
+F --> G[Load Layer]
+G --> G1[SQL Server Tables]
+G --> G2[Bulk Insert via SQLAlchemy]
+
+G --> H[Observability Layer]
+H --> H1[Run ID Tracking]
+H --> H2[Pipeline Logging]
+H --> H3[Data Quality Report]
+
+H --> I[(Data Quality Report Table)]
+G --> J[(Analytics Ready Database)]
 
 ## 🏗️ Architecture
 
