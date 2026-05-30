@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+
+# Data layers (important for ETL projects)
+data/raw/
+data/processed/
+
+# Logs
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+desktop.ini
+
+# Secrets / credentials
+*.json
+.env
