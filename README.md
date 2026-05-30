@@ -1,6 +1,6 @@
 ---
 
-# 📊 Retail Market Intelligence ETL Pipeline
+# 📊 Retail Sales Forecasting ETL Pipeline
 
 ## Overview
 
